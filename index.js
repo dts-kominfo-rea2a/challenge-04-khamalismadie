@@ -13,13 +13,14 @@ const createDate = (date, index = null) => {
 
   date.forEach((date) => {
     arrayDate.push(new Date(date).getTime() / 1000);
-});
+  });
 
-if (index === null) {
-  return arrayDate.sort((a, b) => a - b).join("\n");
-} else {
-  return `${new Date(dates[index]).getTime() / 1000}`;
-}
+  if (index === null) {
+    return arrayDate.sort((a, b) => a - b).join("\n");
+  } else {
+    return `${new Date(dates[index]).getTime() / 1000}`;
+  }
+};
 
 // ! JANGAN DIMODIFIKASI
 (() => {
