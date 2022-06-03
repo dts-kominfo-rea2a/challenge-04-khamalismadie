@@ -11,12 +11,12 @@ const dates = [
 const createDate = (date, index = null) => {
   let arrayDate = [];
 
-  for (let i = 0; i < dates.length; i++) {
+  for (let isiDates = 0; isiDates < dates.length; isiDates++) {
     arrayDate.push(new Date(date).getTime() / 1000);
-  };
+  }
 
   if (index === null) {
-    return arrayDate.sort((a, b) => a - b).join("\n");
+    return arrayDate.sort((a, b) => a - b).join("-");
   } else {
     return `${new Date(dates[index]).getTime() / 1000}`;
   }
