@@ -8,7 +8,7 @@ const dates = [
 ];
 
 // TODO: Buatlah fungsi createDate
-const createDate = (date, index = null) => {
+const createDate = (dates, index = null) => {
   let arrayDate = [];
 
   for (let isiDates = 0; isiDates < dates.length; isiDates++) {
