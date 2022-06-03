@@ -12,7 +12,7 @@ const createDate = (date, index = null) => {
   let arrayDate = [];
 
   for (let isiDates = 0; isiDates < dates.length; isiDates++) {
-    arrayDate.push(new Date(date).getTime() / 1000);
+    arrayDate.push(new Date(date(isiDates)).getTime() / 1000);
   }
 
   if (index === null) {
